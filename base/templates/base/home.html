@@ -6,14 +6,15 @@
 <section class="hero">
     <div class="hero--content">
         <div class="hero--content--intro">
-            <img id="profile_pic" src="{% static 'images/binay.jpg' %}">
-            <h1 class="intro--name">Binay <br> Adhikari</h1>
+            <img id="profile_pic" src="{% static 'images/profile_pic.jpg' %}">
+            <h1 class="intro--name">Damodar Paudel <br>Bairagi</h1>
         </div>
 
         <div class="hero--content--subheadline">
-
-            <h3 class="description">FullStack Software Developer</h3>
-            <p class="slogan">Merging creativity and technology to deliver exceptional web solutions.</p>
+            <p class="slogan">"समृद्ध नेपाल, सुखी नेपालीको लागि"</p>
+            <h3 class="description">प्रतिनिधिसभा सदस्य उमेदवार, दामोदर पौडेल बैरागी</h3>
+            <p class="slogan">कास्की क्षेत्र नम्बर ३ मा</p>
+            <p class="slogan">सुर्य चिन्हमा मतदान गरि अत्यधिक मतले विजयी गराऊ !!</p>
         </div>
     </div>
 
@@ -21,8 +22,36 @@
 
 <section class="container section--2">
 
-    <h3>My Projects</h3>
-    <h5>Projects that makes my journey worthwhile</h5>
+    <!-- <h3>संसदमा दामोदर बैरागी : </h3>
+    <h5>प्रमुख संसदीय योगदान तथा मुद्दाहरू | Key Parliamentary Contributions</h5> -->
+    <h3 style="
+    font-family: 'Noto Serif Devanagari', 'Mukta', 'Noto Sans Devanagari', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #e81d1f;
+    text-align: center;
+    margin: 1.5em 0 0.5em;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    line-height: 1.2;
+">
+    संसदमा दामोदर बैरागी :
+    </h3>
+
+    <h5 style="
+        font-family: 'Noto Serif Devanagari', 'Mukta', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #333;
+        text-align: center;
+        margin: 0 0 2em;
+        letter-spacing: 0.4px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    ">
+        प्रमुख संसदीय योगदान तथा मुद्दाहरू | Key Parliamentary Contributions
+    </h5>
     <div class="projects--wrapper">
 
         {% for project in projects %}
@@ -39,26 +68,18 @@
         <h3>There are no projects in the database...</h3 {% endfor %} </div>
 
 
-        <div class="about--wrapper">
-            <h3>More About Me</h3>
+        <div id="about" class="about--wrapper">
+            <h3 class="slogan">संघर्ष र समर्पणको यात्रा</h3>
 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                and
-                scrambled it to make a type specimen book.</p>
-            <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                containing
-                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                including
-                versions of Lorem Ipsum.</p>
+            <p>दामोदर पौडेल बैरागी मेहनत, संघर्ष र जनताको सेवामा विश्वास गर्ने नेता हुन्। उनी आफ्नो जीवन सधैं जनताको बीच बिताए, कठिनाइ र जोखिमलाई चुनौतीको रूपमा लिँदै। उनले विद्यार्थी आन्दोलनमा सक्रिय भएर पहिलो पटक जनताको पक्षमा उभिन सिके, र त्यसपछि नेतृत्वको भूमिका धारण गर्दै कमिटीको काम व्यवस्थित गरे। उनी केवल नेतृत्वका लागि होइन, जनताको जीवन बुझ्न र उनीहरूको अधिकारको लागि अघि बढे। किसान आन्दोलन, खेतमा स्वयं श्रम, र दुर्गम भीरपाखामा बस्ने मानिसको जीवनसँग प्रत्यक्ष सम्बन्ध स्थापित गर्नु उनको प्रतिबद्धताको उदाहरण हो। आन्दोलन र संघर्षका क्रममा चोट, अपहरण र राज्यको दमन भोग्दा पनि उनी कहिल्यै झुकेनन्, तर अझ दृढ भएर जनताको सेवा गर्न अघि बढे। मजदुर आन्दोलनमा निरन्तर सक्रिय रहँदै उनले जनताको आवाजलाई संगठन र संसद् दुवैमा प्रवाहित गर्न सके। जहाँ न्याय र अधिकारको सवाल आयो, त्यहाँ उनी हिँडे, र जहाँ पीडा थियो, त्यहाँ उनीको उपस्थितिले आशा र बल दियो। संसद्मा पनि उनी केवल उपस्थित भएनन्; जनताका मुद्दा उठाए, दबाब सिर्जना गरे र समाधानको खोजीमा लागे। उनका कदमले देखाउँछ कि नेतृत्व केवल पद वा शक्ति होइन, जनताको जीवन बुझ्ने, उनीहरूको अधिकारको पक्षमा उभिने, र संघर्षबाट सिकेर अघि बढ्ने क्षमतामा आधारित हुन्छ। दामोदर पौडेल बैरागीको जीवन यात्रा, संघर्ष र निष्ठा जनताको विश्वासको आधार बनेको छ, र उनी केवल नेता मात्र होइन, जनताको आवाजको सशक्त प्रतिनिधि हुन्।</p>
+            <p> संसद् केवल उपस्थिति जनाउने थलो होइन, जनताका मुद्दा मजबुत रूपमा उठ्ने ठाउँ हो । प्रतिनिधिसभामा दामोदर पौडेल बैरागीको उपस्थिति औपचारिकतामा सीमित रहेन । कास्की ३ का नागरिकका साझा समस्या र गुनासा संसद्मा पु¥याउने काम उहाँले निरन्तर गरिरहनुभयो । प्रश्न उठाउने, दबाब सिर्जना गर्ने र समाधानतर्फ ध्यानाकर्षण गराउने उहाँको भूमिका स्पष्ट देखियो । त्यसैले जनताको आवाज बोल्ने उम्मेद्वारलाई नै रोजौं । </p>
         </div>
 
 </section>
 
 <section class="section--1">
     <div class="skills--container">
-        <h3>More About Me</h3>
+        <h3 class="slogan">राजनीतिक यात्रा</h3>
 
         {% for skill in detailedSkills %}
         <div class="skill--wrapper">
@@ -74,7 +95,7 @@
         {% endfor %}
 
 
-        <h4>Other Skills</h4>
+        <h4 class="slogan">अन्य</h4>
         <div class="other--skills--wrapper">
             {% for skill in skills %}
             <div class="skill--tag">
@@ -91,8 +112,8 @@
 
 <section class="section--2">
     <div class="skills--container">
-        <h3>Endorsements</h3>
-        <a class="btn btn-primary my-3" href="{% url 'add-endorsement' %}">Add Endorsement</a>
+        <h3 class="slogan">समर्थन जनाउनुहोस</h3>
+        <a class="btn btn-primary my-3 disabled" href="{% url 'add-endorsement' %}">थप्नुहोस</a>
 
         {% for i in endorsements %}
         <div style="margin-bottom: 1em;" class="card">
@@ -107,8 +128,8 @@
 
 
 </section>
-
 <section class="section--1">
+    <h3 class="slogan">सुझाब/गुनासो पठाउनुहोस्</h3>
     <div class="container">
         <form class="contact--form" method="POST">
             {% csrf_token %}

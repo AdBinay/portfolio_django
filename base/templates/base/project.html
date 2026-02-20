@@ -18,7 +18,7 @@
         <img class="project--image" src="{{project.thumbnail.url}}">
 
         <h1>{{project.title}}</h1>
-        <a class="btn btn-warning" href="{% url 'edit-project' project.id %}">Edit</a>
+        <!-- <a class="btn btn-warning" href="{% url 'edit-project' project.id %}">Edit</a> -->
 
         <hr>
         <p>{{project.body|safe}}</p>
@@ -35,7 +35,7 @@
                     {{field}}
                 </div>
                 {% endfor %}
-                <input class="btn btn-primary" type="submit" value="submit">
+                <input class="btn btn-primary disabled" type="submit" value="submit">
             </form>
             <hr>
 

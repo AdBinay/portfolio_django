@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\binay\OneDrive\Desktop\portfolio-livestream\env
+set VIRTUAL_ENV=C:\Users\binay\OneDrive\Desktop\portfolio_django\env
 
 if not defined PROMPT set PROMPT=$P$G
 

@@ -15,10 +15,11 @@ body{
 }
 
 .navigation-bar{
-    background-color: #354955;
+    background-color: #e81d1f;
     height: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
 } 
 
 .nav-link{
@@ -26,68 +27,156 @@ body{
 }
 
 .hero{
-    background-color: #1F2428;
-    min-height: 70vh;
-    color: #fff;
-
+    font-family: 'Noto Serif Devanagari', 'kokila', 'Noto Sans', sans-serif;
+    background-color: #ffffff;
+    min-height: 60vh;
+    color: #e81d1f;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)),  /* ~80% opacity overlay matching your bg color */
+        url('https://th.bing.com/th/id/R.2cee5668532deeaebcb3adc6b63dbf2e?rik=t4sm9yQG3b3ang&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
 }
 
 #profile_pic{
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 350px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 70%;
 }
 
 .hero--content{
+    font-family: 'Noto Serif Devanagari','kokila', 'Noto Sans', sans-serif;
     width: 800px;
     margin: 0 auto;
     padding: 3em;
 }
 
 .hero--content--intro{
+    font-family: 'Noto Serif Devanagari','kokila', 'Noto Sans', sans-serif;
     display: flex;
-    color: #fff;
+    color: #ff0000;
     justify-content: center;
     align-items: center;
     gap: 2em;
     margin-bottom: 3em;
 }
 
-.intro--name{
-    font-size: 100px;
-    letter-spacing: .1em;
+.intro--name {
+    font-family: 'Noto Serif Devanagari','kokila', 'Noto Sans', sans-serif;  /* Devanagari first, then Latin fallback */
+    font-size: 100px;               /* Keep for desktop, but add responsive below */
+    letter-spacing: 0.05em;         /* Reduce from .1em — Devanagari looks better tighter */
     font-weight: 700;
-    
-    
+    line-height: 0.95em;            /* Slightly tighter than .9em to avoid overlap */
+    color: rgb(255, 0, 0);                   /* Assuming white text on red bg for contrast */
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);  /* Optional: subtle shadow for depth on red */
+    text-align: center;             /* If not already */
+}
+
+/* Mobile-friendly adjustment (very important at 100px!) */
+@media (max-width: 768px) {
+    .intro--name {
+        font-family: 'Noto Serif Devanagari','kokila', 'Noto Sans', sans-serif;
+        font-size: 50px;            /* Or 4rem / 12vw for fluid sizing */
+        /* letter-spacing: 0.03em; */
+        line-height: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro--name {
+        font-family: 'Noto Serif Devanagari','kokila', 'Noto Sans', sans-serif;
+        font-size: 40px;
+    }
 }
 
 .description{
-    font-size: 65px;
+    font-family:'Noto Serif Devanagari','kokila','Noto Sans', sans-serif;
+    font-size: 60px;
     text-align: center;
 }
 
 .slogan{
+    font-family: 'Noto Serif Devanagari','kokila', 'Noto Sans', sans-serif;
     font-size: 24px;
     text-align: center;
+    color: #e81d1f;
+    text-shadow: 
+        0 0 10px #ffffff,    /* Yellow glow */
+        0 0 20px #ffffff,
+        0 0 30px #ededff;    /* Orange outer glow */
+    letter-spacing: 0.05em;
+    font-weight: 900;
+}
+
+/* Mobile-friendly adjustment (very important at 100px!) */
+@media (max-width: 768px) {
+    .description {
+        font-family: 'Noto Serif Devanagari','kokila', 'Noto Sans', sans-serif;
+    }
+}
+
+@media (max-width: 480px) {
+    .slogan {
+        font-family: 'Noto Serif Devanagari','kokila', 'Noto Sans', sans-serif;
+    }
 }
 
 .projects--wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: flex-start;
     gap: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
-    
+    overflow-x: auto;
+ 
+}
+
+.projects--wrapper::-webkit-scrollbar {
+    width: 2px;
+
+}
+
+.projects--wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+}
+ 
+.projects--wrapper::-webkit-scrollbar-thumb {
+  background-color: #197c8b;
+  outline: 1px solid slategrey;
+   border-radius: 100px;
+
+}
+
+.projects--wrapper::-webkit-scrollbar-thumb:hover{
+    background-color: #197c8b;
 }
 
 .project--column{
-  
+    min-width: 300px;
+    
+} 
+
+/* .project--thumbnail{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+} */
+.project--thumbnail {
+    width: 100%;
+    max-width: 400px;  
+    height: auto;
+    object-fit: cover;  
+    border-radius: 8px;
 }
 
-.project--thumbnail{
+/* .project--thumbnail {
     width: 100%;
-}
+    height: 260px;              
+    object-fit: cover;          
+    object-position: center;
+    display: block;
+} */
 
 .project--body{
     background-color: #fff;
@@ -104,11 +193,20 @@ body{
 .skill--wrapper{
     margin-top: 2em;
     margin-bottom: 2em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
     
+}
+
+.skill--logo{
+    width: 60px;
+    object-fit: contain;
 }
 
 .other--skills--wrapper{
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
 }
 
@@ -122,7 +220,13 @@ body{
 
 
 .project--image{
-    max-width: 800px;
+    max-width: 200px;
+}
+
+.contact--form{
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 @media (max-width:900px){
@@ -151,6 +255,22 @@ body{
     
     .skills--container{
         width: 100%;
+    }
+
+   
+}
+
+
+@media (max-width:400px){
+
+
+    .skill--wrapper{
+        flex-flow: column;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5em;
+        
     }
 }
 

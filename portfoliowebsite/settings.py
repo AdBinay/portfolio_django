@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-iaz4)-4_y9w(k+jb=v0viloa$ni6q+sqd6u6nb9*1lrv=f9czr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio-livestream.herokuapp.com',
-                 '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -91,7 +90,7 @@ DATABASES = {
     }
 }
 
-
+SILENCED_SYSTEM_CHECKS = ['ckeditor.W001']
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -116,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kathmandu' 
 
 USE_I18N = True
 
